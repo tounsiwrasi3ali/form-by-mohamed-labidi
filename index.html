@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script src="script.js"></script>
+</head>
+
+<body>
+	<form id="form1" name="form1" method="post">
+		
+		<fieldset>
+		
+		  <legend>Iscription d'un(e) assuré(e)</legend>
+			
+			<table width="722" border="0">
+				<tbody>
+				  <tr>
+					<td width="162"> Matricule : </td>
+					<td width="550"> <input type="text" id="mt" name="mt" placeholder="Saisir un matricule" required> <p id="mt_p"></p> </td>
+				  </tr>
+					
+				  <tr>
+					<td width="162"> Ncin : </td>
+					<td width="550"> <input type="text" id="nc" name="nc" placeholder="Saisir un Ncin"> <p id="nc_p"></p> </td>
+				  </tr>
+					
+				  <tr>
+					<td width="162"> Nom : </td>
+					<td width="550"> <input type="text" id="name" name="name" placeholder="Saisir un nom" required>  <p id="nom_p"></p> </td>
+				  </tr>
+				
+					<tr>
+					<td width="162"> Prénom : </td>
+					<td width="550"> <input type="text" id="pname" name="pname" placeholder="Saisir un prénom" required> <p id="pnom_p"></p> </td>
+				  </tr>
+				
+				  <tr>
+					<td width="162"> Etat civil : </td>
+					<td width="550"> 
+						<input type="radio" name="ec" value="0" checked> Célibataire
+						<input type="radio" name="ec" value="1"> Marié
+						<input type="radio" name="ec" value="2"> Divorcé
+					
+					</td>
+				  </tr>
+					
+				 <tr>
+					<td width="162"> Nombre d'enfants assurés : </td>
+					<td width="550"> <input type="text" id="n_enf" name="n_enf" placeholder="Saisir le nombre d'enfants assurés" required> <p id="n_enf_p"></p> </td>
+				  </tr>
+					
+				  <tr>
+					<td width="162"> Type d'assurance : </td>
+					<td width="550"> 
+						<select id="s1" name="s1" size="3">
+										
+							<option value="0" selected> Santé publique </option>	
+							<option value="1"> Médecin de famile </option>
+							<option value="2"> Rembourcement des dépenses </option>
+						
+						</select> 
+					 </td>
+				  </tr>
+				</tbody>
+      		</table>
+			
+			<div style="margin-left: 200px; margin-top: 10px; margin-bottom: 10px">
+				<input type="button" id="add" name="add" value="Valider" onClick="adder()">
+				<input type="reset" id="clear" name="clear" value="Annuler">
+			</div>
+		
+	  </fieldset>
+		
+	  <fieldset>
+		  
+		  <legend>La liste des assuré(e)s</legend>
+		  
+		  <select id="s2" name="s2" size="5"></select>
+		  
+		  <br>
+		  
+		  <div style="margin-left: 100px; margin-top: 10px; margin-bottom: 10px">
+		  	<input type="button" id="add" name="add" value="Effacé" onClick="cleaner()">
+		  </div>
+		
+	  </fieldset>
+		
+</form>
+	
+	
+	
+</body>
+</html>
